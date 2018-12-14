@@ -1,0 +1,1 @@
+myArr = ["Mon", "Tue", "Wed"]
