@@ -7,10 +7,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-
-
-
-myLst = [1,2,3,5,7,9]
+myLst = [1, 2, 3, 5, 7, 9]
 
 print(myLst)
 
@@ -73,14 +70,14 @@ len(list(mycount.elements()))
 
 ############ Python OOP #######################
 ############ Create a class  ###########
-
+'''
 class Employee:
 
-	def __init__(self, first, last, pay):
-	    self.first = first
-	    self.last = last
-	    self.pay = pay
-	    self.email = first + '.' + last + '@company.com'
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.pay = pay
+        self.email = first + '.' + last + '@company.com'
 
 
 emp_1 = Employee('Corey', 'Schafer', 50000)
@@ -90,17 +87,23 @@ emp_2 = Employee('Test', 'User', 40000)
 print('{} {}'.format(emp_1.first,emp_1.last))
 
 # or we create a method:
+'''
 
 class Employee:
 
-	def __init__(self, first, last, pay):
-		self.first = first
-		self.last = last
-		self.pay = pay
-		self.email = first + '.' + last + '@company.com'
-		
-	def fullname(self):
-		return '{} {}'.format(self.first,self.last)
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.pay = pay
+        self.email = first + '.' + last + '@company.com'
+
+    def fullname(self):
+        return '{} {}'.format(self.first, self.last)
 
 
-print(emp_1.fullname)
+emp_1 = Employee('Corey', 'Schafer', 50000)
+emp_2 = Employee('Test', 'User', 40000)
+print(emp_1.fullname())
+print(emp_2.email)
+print(Employee.fullname(emp_1))
+
