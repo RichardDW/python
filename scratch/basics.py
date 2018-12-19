@@ -3,7 +3,6 @@ import numpy
 def main():
     print("hello world")
 
-
 if __name__ == "__main__":
     main()
 
@@ -28,14 +27,14 @@ mylist + ["kasper", 0.71]
 mylist_ext = mylist + ["castor", 1.44, "pollux", 1.54]
 
 #create a set
-primesS = set((1,2,3,5,7))
+primesS = set((1, 2, 3, 5, 7))
 #create a tuple
-primesT = (1,2,3,5,7)
+primesT = (1, 2, 3, 5, 7)
 #create a list
-primesL = [1,2,3,5,7]
+primesL = [1, 2, 3, 5, 7]
 
 ## Test if item is in list
-r = range(1,5)
+r = range(1, 5)
 # test if value in range
 1 in r
 
@@ -100,10 +99,18 @@ class Employee:
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
 
+    def apply_raise(self):
+        self.pay = int(self.pay * 1.04)
+
 
 emp_1 = Employee('Corey', 'Schafer', 50000)
 emp_2 = Employee('Test', 'User', 40000)
 print(emp_1.fullname())
 print(emp_2.email)
 print(Employee.fullname(emp_1))
+
+print(emp_1.pay)
+emp_1.apply_raise()
+print(emp_1.pay)
+
 
