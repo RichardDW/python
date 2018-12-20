@@ -1,12 +1,16 @@
+from typing import List
+
 import numpy
+
 
 def main():
     print("hello world")
 
+
 if __name__ == "__main__":
     main()
 
-myLst = [1, 2, 3, 5, 7, 9]
+myLst: List[int] = [1, 2, 3, 5, 7, 9]
 
 print(myLst)
 
@@ -26,14 +30,14 @@ mylist + ["kasper", 0.71]
 # create new list and add item
 mylist_ext = mylist + ["castor", 1.44, "pollux", 1.54]
 
-#create a set
+# create a set
 primesS = set((1, 2, 3, 5, 7))
-#create a tuple
+# create a tuple
 primesT = (1, 2, 3, 5, 7)
-#create a list
+# create a list
 primesL = [1, 2, 3, 5, 7]
 
-## Test if item is in list
+# Test if item is in list
 r = range(1, 5)
 # test if value in range
 1 in r
@@ -87,6 +91,7 @@ print('{} {}'.format(emp_1.first,emp_1.last))
 
 # or we create a method:
 '''
+
 
 class Employee:
 
