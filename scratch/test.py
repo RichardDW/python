@@ -1,10 +1,4 @@
-Python 3.2.3 (default, Sep 30 2012, 16:41:36) 
-[GCC 4.7.2] on linux2
-Type "copyright", "credits" or "license()" for more information.
->>> 
->>> def area(base,blah)
-SyntaxError: invalid syntax
->>> def convert_to_celsius(fahrenheit):
+def convert_to_celsius(fahrenheit):
 	'''(number) -> number
 	Return the degrees fahrenheit in celsius.
 
@@ -13,35 +7,12 @@ SyntaxError: invalid syntax
 	'''
 	return fahrenheit -32 * 5 / 9
 
->>> convert_to_celsius(32)
-14.222222222222221
->>> def convert_to_celsius(fahrenheit):
-	'''(number) -> number
-	Return the degrees fahrenheit in celsius.
-
-	>>>convert_to_celsius(32)
-	0
-	'''
-	return (fahrenheit - 32) * 5 / 9
-
->>> convert_to_celsius(32)convert_to_celsius(32)
-SyntaxError: invalid syntax
->>> 
->>> convert_to_celsius(32)
-0.0
->>> convert_to_celsius(212)
-100.0
->>> convert_to_celsius(98)
-36.666666666666664
->>> 
-
-
-# Show class of an variable
-type(<variable>)
+# Show class of an variable myvar
+type(myvar)
 # show object methods of a variable
-dir(<variable>)
+dir(myvar)
 # show the referenced (internal) id of a variable
-id(<variable>)
+id(myvar)
 
 # tuple, t = (34,"t","tg",44,(55,66))
 
@@ -68,5 +39,14 @@ mycsv.split(',')[2]
 
 # join on an empty seperator
 ''.join(['high','way','man'])
+
+i = 524
+result = 524
+while i < 10508:
+	i = i + 2
+	result = result + i
+
+print(result)
+
 
 

@@ -1,1 +1,0 @@
-myArr = ["Mon", "Tue", "Wed"]
