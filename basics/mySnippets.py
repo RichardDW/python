@@ -7,11 +7,11 @@ if __name__ == "__main__":
     main()
 
 # -----
-	
+
 def main(url):
     get_something(url)
 
-	
+
 if __name__ == '__main__':
     main(sys.argv[1])
 
@@ -35,7 +35,7 @@ if os.path.isdir("/tmp"):
     print ("/tmp is a directory")
 else:
     print ("/tmp is not a directory")
-	
+
 # -----
 from pathlib import Path
 
@@ -56,8 +56,8 @@ import os,glob
 
 os.chdir("/home/rwo/Download")
 for file in glob.glob("*.gz"):
-	print(file)
-	
+    print(file)
+
 
 
 ## open and read in file
@@ -189,46 +189,46 @@ name_for_userid = {
 }
 
 def greeting(userid):
-	'''
-	>>> greeting(382)
-	"Hi Alice!"
-	
-	>>> greeting(333333)
-	"Hi there!"
-	'''
+    '''
+    >>> greeting(382)
+    "Hi Alice!"
+
+    >>> greeting(333333)
+    "Hi there!"
+    '''
     return "Hi %s!" % name_for_userid.get(userid, "there")
 
 a = ['foo', 'bar', 'baz']
 while a:
-	print(a.pop(-1))
+    print(a.pop(-1))
 
 
 # ===================================
 a = ['foo', 'bar', 'baz', 'qux']
 s = 'corge'
 i = 0
-	while i < len(a):
-		if a[i] == s:
-			Processing for item found
-			break
-		i += 1
-	else:
-		# Processing for item not found
-		print(s, 'not found in list.')
+    while i < len(a):
+        if a[i] == s:
+            #Processing for item found
+            break
+        i += 1
+    else:
+        # Processing for item not found
+        print(s, 'not found in list.')
 
 #---OR ---
 
 if s in a:
-	print(s, 'found in list.')
+    print(s, 'found in list.')
 else:
-	print(s, 'not found in list.')
+    print(s, 'not found in list.')
 
 #---- OR ---
-	
+
 try:
-	print(a.index('corge'))
+    print(a.index('corge'))
 except ValueError:
-	print(s, 'not found in list.')
+    print(s, 'not found in list.')
 
 
 # LIST COMPREHENSION
@@ -321,7 +321,7 @@ print(next_line.encode("utf-8"))
 next_bytes = b'\xe6\x96\x87\xe8\xa8\x80'
 print(next_bytes.decode("utf-8"))	
 
-	
+
 # ------------- Decorators --------------------------------
 def printlog(func):
     def wrapper(arg):
@@ -339,8 +339,8 @@ print(f(3))
 # Fibonacci sequence
 a, b = 0, 1
 for i in range(0, 10):
-	print(a)
-	a, b = b, a + b
+    print(a)
+    a, b = b, a + b
 
 # ----------------  Web scraping --------------------------
 
@@ -449,7 +449,7 @@ def hours_difference(time_1, time_2):
     0.0
     '''
     return (time_2 * 10 / 36000) - (time_1 * 10 / 36000)
-	
+
 def to_24_hour_clock(hours):
     '''(number) -> number
 
@@ -470,7 +470,7 @@ def to_24_hour_clock(hours):
     4.5
     '''
     return hours % 24
-	
-	
+
+
 
 
