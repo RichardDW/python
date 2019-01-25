@@ -13,6 +13,13 @@ def fetch_words(url):
                 story_words.append(word)
     return story_words
 
+def find_prime_factors(n):
+    i = 2
+    while n > 1:
+        while n % i == 0:
+            yield i
+            n //= i
+        i += 1
 
 def print_items(items):
     for item in items:

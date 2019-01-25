@@ -335,6 +335,22 @@ def f(n):
 print(f(3))
 
 
+def money_format(func):
+    def wrapper(*args, **kwargs):
+        r = func(*args, **kwargs)
+        formatted = '£{:.2f}'.format(r)
+        return formatted
+    return wrapper
+
+
+@money_format
+def add_tax(value, tax_percentage):
+    return value * (1 + (tax_percentage / 100))
+
+add_tax(101,21)
+
+
+
 # -----------------
 # Fibonacci sequence
 a, b = 0, 1
