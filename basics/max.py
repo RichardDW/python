@@ -1,6 +1,7 @@
 # multiply all digits of a number and repeat.
 # search for a string that has the most steps to 
-# repeat this process
+# repeat this process. It is called
+# multiplicative persistence
 
 def per(n):
 	if len(str(n))==1:
