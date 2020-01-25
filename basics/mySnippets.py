@@ -407,6 +407,25 @@ def fetch_words(url):
     return story_words
 
 
+#++++++++++++++++++++++++++++++++++++++++++++++
+#------ Date and time --------------
+
+from datetime import datetime 
+
+current_date = datetime.now()
+print('Today is: ' + str(current_date))
+
+today = datetime.now()
+one_day = timedelta(days=1)
+yesterday = today - one_day
+
+print('Yesterday was: ' + str(yesterday))
+
+
+
+
+
+
 
 
 #------------- Time conversion -----------------
